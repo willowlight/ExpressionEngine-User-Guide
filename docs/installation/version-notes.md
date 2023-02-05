@@ -17,7 +17,7 @@ Please view the update notes for any versions that are newer than the version yo
 ExpressionEngine 7.0.0 integrated both Low Search (now Pro Search) and Low Variables (now Pro Variables) as native add-ons in the core.  If you have either add-on already installed, the following steps are recommended.
 
 - After upgrade, if Low Search and/or Low variables were already installed, on the Add-on page you will see the corresponding native Pro Search/Pro Variables installed and the Low add-on uninstalled.  This was done automatically.  You should remove the old add-on folder in system/user/addons/.  
-- While old Low Search and Low Variable tags will continue to work in version 7, it is recommended they be replaced.  To do so, first backup your database.  Next, in `Tools - Utilities - Search and Replace`, search for ``{exp:low_search:`` and replace with `{exp:pro_search:`.  Likewise, if Low Variables was used, search for `{exp:low_variables:` and replace with `{exp:pro_variables:`.
+- While old Low Search and Low Variable tags will continue to work in version 7, it is recommended they be replaced.  To do so, first backup your database.  Next, in `Tools - Utilities - Search and Replace`, search for ``exp:low_search:`` and replace with `exp:pro_search:`, search for ``low_search_keywords`` and replace with ``pro_search_keywords``, search for ``low_search_excerpt`` and replace with ``pro_search_excerpt``.  Likewise, if Low Variables was used, search for `{exp:low_variables:` and replace with `{exp:pro_variables:`.
 
 ## Version Notes for 6.0.0
 
